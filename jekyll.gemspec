@@ -39,6 +39,7 @@ Gem::Specification.new do |s|
      "lib/jekyll/converters/textpattern.rb",
      "lib/jekyll/converters/typo.rb",
      "lib/jekyll/converters/wordpress.rb",
+     "lib/jekyll/converters/wordpress_xml.rb",
      "lib/jekyll/convertible.rb",
      "lib/jekyll/core_ext.rb",
      "lib/jekyll/filters.rb",

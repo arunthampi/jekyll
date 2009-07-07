@@ -75,6 +75,10 @@ namespace :convert do
   task :typo do
     sh %q(ruby -r './lib/jekyll/converters/typo' -e 'Jekyll::Typo.process("#{ENV["DB"]}", "#{ENV["USER"]}", "#{ENV["PASS"]}")')
   end
+  desc "Migrate from Wordpress XML in the current directory"
+  task :wordpress_xml do
+    sh %q(ruby -r './lib/jekyll/converters/wordpress_xml' -e 'Jekyll::WordpressXml.process("#{ENV["FILE"]}")')    
+  end
 end
 
 begin
